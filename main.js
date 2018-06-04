@@ -13,16 +13,19 @@
 
 // create a variable to hold your last name
 
-const lastName = "Yoder";
+//const lastName = "Yoder";
 
-let name = {} => {
-    if (lastName >= 7) {
+let name = (lastName) => {
+    if (lastName.length >= 7) {
     console.log("I can't pronounce this last name");
     }
-    else if (lastName < 7) {
+    else if (lastName.length < 7) {
     console.log(lastName);
 }
 } 
+
+name("Castelloe"); 
+name("Yoder");
 
 // This is the way Jisie did it______________________________________________
 // const lastName = "Yoder";
